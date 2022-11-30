@@ -1,0 +1,33 @@
+*** Object Files to Link.
+#+begin_src 
+  ./build/iPhoneSimulator-16.1-Development/objs/init.o
+  ./build/iPhoneSimulator-16.1-Development/objs/main.o
+  /Library/RubyMotion/data/ios/16.1/iPhoneSimulator/UIKit_stubs.o
+  /Library/RubyMotion/data/ios/16.1/iPhoneSimulator/Foundation_stubs.o
+  /Library/RubyMotion/data/ios/16.1/iPhoneSimulator/CoreGraphics_stubs.o
+  /Library/RubyMotion/data/ios/16.1/iPhoneSimulator/CoreFoundation_stubs.o
+  /Library/RubyMotion/data/ios/16.1/iPhoneSimulator/CFNetwork_stubs.o
+  /Library/RubyMotion/data/ios/16.1/iPhoneSimulator/CoreData_stubs.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/motion-yaml-1.6.4/lib/project/yaml.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/motion/cdq/config.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/motion/cdq/deprecation.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/motion/cdq/context.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/motion/cdq/model.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/motion/cdq/store.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/motion/cdq/object.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/motion/cdq/partial_predicate.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/motion/cdq/query.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/motion/cdq/targeted_query.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/motion/cdq/relationship_query.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/motion/managed_object.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/motion/cdq/collection_proxy.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/motion/cdq/object_proxy.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/motion/cdq.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/motion-yaml-1.6.4/lib/project/scanner.rb.o
+  ./build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/dev/islandmagic/cdq-crash-repro/app/app_delegate.rb.o
+  ./build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/dev/islandmagic/cdq-crash-repro/app/models/article.rb.o
+  ./build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/dev/islandmagic/cdq-crash-repro/app/models/comment.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Library/RubyMotion/lib/motion/spec.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Library/RubyMotion/lib/motion/project/template/ios/spec-helpers/ui.rb.o
+  ./build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/dev/islandmagic/cdq-crash-repro/spec/cdq_spec.rb.o
+#+end_src

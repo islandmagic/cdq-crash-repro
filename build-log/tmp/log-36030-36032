@@ -1,0 +1,25 @@
+** Command
+#+begin_src sh
+  "/Applications/Xcode-14.1.0.app/Contents/Developer/usr/bin/actool" --output-format human-readable-text --notices --warnings --platform iphoneos --minimum-deployment-target 16.1 --target-device iphone --target-device ipad  --app-icon 'AppIcon' --launch-image 'LaunchImage' --output-partial-info-plist '/Users/gauberger/dev/islandmagic/cdq-crash-repro/build/iPhoneSimulator-16.1-Development/AssetCatalog-Info.plist' --compress-pngs --compile "/Users/gauberger/dev/islandmagic/cdq-crash-repro/build/iPhoneSimulator-16.1-Development/cdq-crash-repro_spec.app" "/Users/gauberger/dev/islandmagic/cdq-crash-repro/resources/Assets.xcassets"
+#+end_src
+
+#+begin_src xml
+  /* com.apple.actool.document.warnings */
+  /Users/gauberger/dev/islandmagic/cdq-crash-repro/resources/Assets.xcassets:./LaunchImage.launchimage: warning: Launch images are deprecated in iOS 13.0. Use a launch storyboard or XIB instead.
+  /Users/gauberger/dev/islandmagic/cdq-crash-repro/resources/Assets.xcassets:./LaunchImage.launchimage/(null)[2d][Default-375w-667h@2x.png]: warning: The launch image set "LaunchImage" has 2 unassigned children.
+  /* com.apple.actool.document.notices */
+  /Users/gauberger/dev/islandmagic/cdq-crash-repro/resources/Assets.xcassets:./AppIcon.appiconset/[][ipad][76x76][][][1x][][][]: notice: 76x76@1x app icons only apply to iPad apps targeting releases of iOS prior to 10.0.
+  /* com.apple.actool.compilation-results */
+  /Users/gauberger/dev/islandmagic/cdq-crash-repro/build/iPhoneSimulator-16.1-Development/AssetCatalog-Info.plist
+  /Users/gauberger/dev/islandmagic/cdq-crash-repro/build/iPhoneSimulator-16.1-Development/cdq-crash-repro_spec.app/AppIcon60x60@2x.png
+  /Users/gauberger/dev/islandmagic/cdq-crash-repro/build/iPhoneSimulator-16.1-Development/cdq-crash-repro_spec.app/AppIcon76x76@2x~ipad.png
+  /Users/gauberger/dev/islandmagic/cdq-crash-repro/build/iPhoneSimulator-16.1-Development/cdq-crash-repro_spec.app/Assets.car
+  /Users/gauberger/dev/islandmagic/cdq-crash-repro/build/iPhoneSimulator-16.1-Development/cdq-crash-repro_spec.app/LaunchImage-1100-Portrait-2436h@3x.png
+  /Users/gauberger/dev/islandmagic/cdq-crash-repro/build/iPhoneSimulator-16.1-Development/cdq-crash-repro_spec.app/LaunchImage-700-568h@2x.png
+  /Users/gauberger/dev/islandmagic/cdq-crash-repro/build/iPhoneSimulator-16.1-Development/cdq-crash-repro_spec.app/LaunchImage-700-Portrait@2x~ipad.png
+  /Users/gauberger/dev/islandmagic/cdq-crash-repro/build/iPhoneSimulator-16.1-Development/cdq-crash-repro_spec.app/LaunchImage-700-Portrait~ipad.png
+  /Users/gauberger/dev/islandmagic/cdq-crash-repro/build/iPhoneSimulator-16.1-Development/cdq-crash-repro_spec.app/LaunchImage-700@2x.png
+  /Users/gauberger/dev/islandmagic/cdq-crash-repro/build/iPhoneSimulator-16.1-Development/cdq-crash-repro_spec.app/LaunchImage-800-667h@2x.png
+  /Users/gauberger/dev/islandmagic/cdq-crash-repro/build/iPhoneSimulator-16.1-Development/cdq-crash-repro_spec.app/LaunchImage-800-Portrait-736h@3x.png
+  
+#+end_src

@@ -1,0 +1,440 @@
+* Build initiated.
+  :PROPERTIES:
+  :platform: iPhoneSimulator
+  :time: 19:54:02.860
+  :ruby_compiler: /Library/RubyMotion/bin/ruby
+  :c_compiler: /Applications/Xcode-14.1.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
+  :cxx_compiler: /Applications/Xcode-14.1.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
+  :archs: ["x86_64"]
+  :END:
+** Resource Directories
+- /Users/gauberger/dev/islandmagic/cdq-crash-repro/resources
+** BridgeSupport Files
+- /Users/gauberger/dev/islandmagic/cdq-crash-repro/Library/RubyMotion/data/ios/16.1/BridgeSupport/RubyMotion.bridgesupport
+- /Users/gauberger/dev/islandmagic/cdq-crash-repro/Library/RubyMotion/data/ios/16.1/BridgeSupport/UIKit.bridgesupport
+- /Users/gauberger/dev/islandmagic/cdq-crash-repro/Library/RubyMotion/data/ios/16.1/BridgeSupport/Foundation.bridgesupport
+- /Users/gauberger/dev/islandmagic/cdq-crash-repro/Library/RubyMotion/data/ios/16.1/BridgeSupport/CoreGraphics.bridgesupport
+- /Users/gauberger/dev/islandmagic/cdq-crash-repro/Library/RubyMotion/data/ios/16.1/BridgeSupport/CoreFoundation.bridgesupport
+- /Users/gauberger/dev/islandmagic/cdq-crash-repro/Library/RubyMotion/data/ios/16.1/BridgeSupport/CFNetwork.bridgesupport
+- /Users/gauberger/dev/islandmagic/cdq-crash-repro/Library/RubyMotion/data/ios/16.1/BridgeSupport/CoreAudio.bridgesupport
+- /Users/gauberger/dev/islandmagic/cdq-crash-repro/Library/RubyMotion/data/ios/16.1/BridgeSupport/QuartzCore.bridgesupport
+- /Users/gauberger/dev/islandmagic/cdq-crash-repro/Library/RubyMotion/data/ios/16.1/BridgeSupport/CoreServices.bridgesupport
+- /Users/gauberger/dev/islandmagic/cdq-crash-repro/Library/RubyMotion/data/ios/16.1/BridgeSupport/CoreData.bridgesupport
+- /Users/gauberger/dev/islandmagic/cdq-crash-repro/Users/gauberger/Library/RubyMotion/build/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/motion-yaml-1.6.4/lib/YAMLKit/YAMLKit.bridgesupport
+- /Users/gauberger/dev/islandmagic/cdq-crash-repro/Users/gauberger/Library/RubyMotion/build/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/vendor/cdq/ext/ext.bridgesupport
+** Compiling =/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/motion-yaml-1.6.4/lib/project/yaml.rb=
+** Compiling =/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/lib/../motion/cdq/config.rb=
+** Compiling =/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/lib/../motion/cdq/deprecation.rb=
+** Compiling =/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/lib/../motion/cdq/context.rb=
+** Compiling =/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/lib/../motion/cdq/model.rb=
+** Compiling =/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/lib/../motion/cdq/store.rb=
+** Compiling =/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/lib/../motion/cdq/object.rb=
+** Compiling =/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/lib/../motion/cdq/partial_predicate.rb=
+** Compiling =/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/lib/../motion/cdq/query.rb=
+** Compiling =/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/lib/../motion/cdq/targeted_query.rb=
+** Compiling =/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/lib/../motion/cdq/relationship_query.rb=
+** Compiling =/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/lib/../motion/managed_object.rb=
+** Compiling =/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/lib/../motion/cdq/collection_proxy.rb=
+** Compiling =/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/lib/../motion/cdq/object_proxy.rb=
+** Compiling =/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/lib/../motion/cdq.rb=
+** Compiling =/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/motion-yaml-1.6.4/lib/project/scanner.rb=
+** Compiling =./app/models/comment.rb=
+** Compiling =/Library/RubyMotion/lib/motion/spec.rb=
+** Compiling =./app/app_delegate.rb=
+** Compiling =./app/models/article.rb=
+** Compiling =/Library/RubyMotion/lib/motion/project/template/ios/spec-helpers/ui.rb=
+** Compiling =./spec/cdq_spec.rb=
+** Generating =init.mm=
+#+begin_src objective-c
+  #import <Foundation/Foundation.h>
+  
+  extern "C" {
+  void ruby_init(void);
+  void ruby_init_loadpath(void);
+  void ruby_script(const char *);
+  void *rb_vm_top_self(void);
+  void rb_define_global_const(const char *, void *);
+  void rb_rb2oc_exc_handler(void);
+  void ruby_init_device_repl(void);
+  void MREP_6769264D7FE5460C91E8E9B124D672E2(void *, void *);
+  void MREP_91A2C11531F74100B701FBE443866DC3(void *, void *);
+  void MREP_DFD544786BA94FCDA30236645CA64A9E(void *, void *);
+  void MREP_4C8BBCB5374D4124AAFD67D0577892F5(void *, void *);
+  void MREP_7B144AA763B441F89FA9EFF946994C5C(void *, void *);
+  void MREP_CBD1561F30ED4A688F4D6C3AB6FB71EB(void *, void *);
+  void MREP_0E98A900023F403F851E305CFF6797AE(void *, void *);
+  void MREP_ED41669A2E8B4F5281E65F905823D793(void *, void *);
+  void MREP_9E940DABF0CD47F69A68526BE745A86F(void *, void *);
+  void MREP_BC41BAF35C80401E9FC96F70D8D893B5(void *, void *);
+  void MREP_BE467412CFDA4065AC89E6E78AC28D27(void *, void *);
+  void MREP_715BF61BCDB24DB5921E0506CB5D76CE(void *, void *);
+  void MREP_7480066F3FF24D8BA0EAA6559245DDEE(void *, void *);
+  void MREP_4C9AA883388A49A18FEF96334821EE01(void *, void *);
+  void MREP_7402A5D15AE44D599EC20B2D41DE1550(void *, void *);
+  void MREP_AFF1311137684D8D92BAAB652D0F3CC8(void *, void *);
+  void MREP_1A66D23214E94A34A16EE7D6C86A2621(void *, void *);
+  void MREP_A50B453CE257480D92BE6B5E582F7A8C(void *, void *);
+  void MREP_68AD115A9D0B4B36ABA14BEE476F46E1(void *, void *);
+  int rm_repl_port = 53243;
+  }
+  
+  extern "C"
+  void
+  RubyMotionInit(int argc, char **argv)
+  {
+  static bool initialized = false;
+  if (!initialized) {
+  ruby_init();
+  ruby_init_loadpath();
+  if (argc > 0) {
+  const char *progname = argv[0];
+  ruby_script(progname);
+  }
+  #if !__LP64__
+  try {
+  #endif
+  void *self = rb_vm_top_self();
+  ruby_init_device_repl();
+  rb_define_global_const("RUBYMOTION_ENV", @"test");
+  rb_define_global_const("RUBYMOTION_VERSION", @"8.8");
+  MREP_6769264D7FE5460C91E8E9B124D672E2(self, 0);
+  MREP_91A2C11531F74100B701FBE443866DC3(self, 0);
+  MREP_DFD544786BA94FCDA30236645CA64A9E(self, 0);
+  MREP_4C8BBCB5374D4124AAFD67D0577892F5(self, 0);
+  MREP_7B144AA763B441F89FA9EFF946994C5C(self, 0);
+  MREP_CBD1561F30ED4A688F4D6C3AB6FB71EB(self, 0);
+  MREP_0E98A900023F403F851E305CFF6797AE(self, 0);
+  MREP_ED41669A2E8B4F5281E65F905823D793(self, 0);
+  MREP_9E940DABF0CD47F69A68526BE745A86F(self, 0);
+  MREP_BC41BAF35C80401E9FC96F70D8D893B5(self, 0);
+  MREP_BE467412CFDA4065AC89E6E78AC28D27(self, 0);
+  MREP_715BF61BCDB24DB5921E0506CB5D76CE(self, 0);
+  MREP_7480066F3FF24D8BA0EAA6559245DDEE(self, 0);
+  MREP_4C9AA883388A49A18FEF96334821EE01(self, 0);
+  MREP_7402A5D15AE44D599EC20B2D41DE1550(self, 0);
+  MREP_AFF1311137684D8D92BAAB652D0F3CC8(self, 0);
+  MREP_1A66D23214E94A34A16EE7D6C86A2621(self, 0);
+  MREP_A50B453CE257480D92BE6B5E582F7A8C(self, 0);
+  MREP_68AD115A9D0B4B36ABA14BEE476F46E1(self, 0);
+  #if !__LP64__
+  }
+  catch (...) {
+  rb_rb2oc_exc_handler();
+  }
+  #endif
+  initialized = true;
+  }
+  }
+#+end_src
+** Generating =main.mm=
+#+begin_src objective-c
+  #import <Foundation/Foundation.h>
+  
+  extern "C" {
+  void ruby_init(void);
+  void ruby_init_loadpath(void);
+  void ruby_script(const char *);
+  void *rb_vm_top_self(void);
+  void rb_define_global_const(const char *, void *);
+  void rb_rb2oc_exc_handler(void);
+  void ruby_init_device_repl(void);
+  void MREP_6769264D7FE5460C91E8E9B124D672E2(void *, void *);
+  void MREP_91A2C11531F74100B701FBE443866DC3(void *, void *);
+  void MREP_DFD544786BA94FCDA30236645CA64A9E(void *, void *);
+  void MREP_4C8BBCB5374D4124AAFD67D0577892F5(void *, void *);
+  void MREP_7B144AA763B441F89FA9EFF946994C5C(void *, void *);
+  void MREP_CBD1561F30ED4A688F4D6C3AB6FB71EB(void *, void *);
+  void MREP_0E98A900023F403F851E305CFF6797AE(void *, void *);
+  void MREP_ED41669A2E8B4F5281E65F905823D793(void *, void *);
+  void MREP_9E940DABF0CD47F69A68526BE745A86F(void *, void *);
+  void MREP_BC41BAF35C80401E9FC96F70D8D893B5(void *, void *);
+  void MREP_BE467412CFDA4065AC89E6E78AC28D27(void *, void *);
+  void MREP_715BF61BCDB24DB5921E0506CB5D76CE(void *, void *);
+  void MREP_7480066F3FF24D8BA0EAA6559245DDEE(void *, void *);
+  void MREP_4C9AA883388A49A18FEF96334821EE01(void *, void *);
+  void MREP_7402A5D15AE44D599EC20B2D41DE1550(void *, void *);
+  void MREP_AFF1311137684D8D92BAAB652D0F3CC8(void *, void *);
+  void MREP_1A66D23214E94A34A16EE7D6C86A2621(void *, void *);
+  void MREP_A50B453CE257480D92BE6B5E582F7A8C(void *, void *);
+  void MREP_68AD115A9D0B4B36ABA14BEE476F46E1(void *, void *);
+  int rm_repl_port = 53243;
+  }
+  
+  extern "C"
+  void
+  RubyMotionInit(int argc, char **argv)
+  {
+  static bool initialized = false;
+  if (!initialized) {
+  ruby_init();
+  ruby_init_loadpath();
+  if (argc > 0) {
+  const char *progname = argv[0];
+  ruby_script(progname);
+  }
+  #if !__LP64__
+  try {
+  #endif
+  void *self = rb_vm_top_self();
+  ruby_init_device_repl();
+  rb_define_global_const("RUBYMOTION_ENV", @"test");
+  rb_define_global_const("RUBYMOTION_VERSION", @"8.8");
+  MREP_6769264D7FE5460C91E8E9B124D672E2(self, 0);
+  MREP_91A2C11531F74100B701FBE443866DC3(self, 0);
+  MREP_DFD544786BA94FCDA30236645CA64A9E(self, 0);
+  MREP_4C8BBCB5374D4124AAFD67D0577892F5(self, 0);
+  MREP_7B144AA763B441F89FA9EFF946994C5C(self, 0);
+  MREP_CBD1561F30ED4A688F4D6C3AB6FB71EB(self, 0);
+  MREP_0E98A900023F403F851E305CFF6797AE(self, 0);
+  MREP_ED41669A2E8B4F5281E65F905823D793(self, 0);
+  MREP_9E940DABF0CD47F69A68526BE745A86F(self, 0);
+  MREP_BC41BAF35C80401E9FC96F70D8D893B5(self, 0);
+  MREP_BE467412CFDA4065AC89E6E78AC28D27(self, 0);
+  MREP_715BF61BCDB24DB5921E0506CB5D76CE(self, 0);
+  MREP_7480066F3FF24D8BA0EAA6559245DDEE(self, 0);
+  MREP_4C9AA883388A49A18FEF96334821EE01(self, 0);
+  MREP_7402A5D15AE44D599EC20B2D41DE1550(self, 0);
+  MREP_AFF1311137684D8D92BAAB652D0F3CC8(self, 0);
+  MREP_1A66D23214E94A34A16EE7D6C86A2621(self, 0);
+  MREP_A50B453CE257480D92BE6B5E582F7A8C(self, 0);
+  MREP_68AD115A9D0B4B36ABA14BEE476F46E1(self, 0);
+  #if !__LP64__
+  }
+  catch (...) {
+  rb_rb2oc_exc_handler();
+  }
+  #endif
+  initialized = true;
+  }
+  }
+#+end_src
+** Creating app.
+*** Object Files to Link.
+#+begin_src 
+  ./build/iPhoneSimulator-16.1-Development/objs/init.o
+  ./build/iPhoneSimulator-16.1-Development/objs/main.o
+  /Library/RubyMotion/data/ios/16.1/iPhoneSimulator/UIKit_stubs.o
+  /Library/RubyMotion/data/ios/16.1/iPhoneSimulator/Foundation_stubs.o
+  /Library/RubyMotion/data/ios/16.1/iPhoneSimulator/CoreGraphics_stubs.o
+  /Library/RubyMotion/data/ios/16.1/iPhoneSimulator/CoreFoundation_stubs.o
+  /Library/RubyMotion/data/ios/16.1/iPhoneSimulator/CFNetwork_stubs.o
+  /Library/RubyMotion/data/ios/16.1/iPhoneSimulator/CoreData_stubs.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/motion-yaml-1.6.4/lib/project/yaml.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/motion/cdq/config.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/motion/cdq/deprecation.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/motion/cdq/context.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/motion/cdq/model.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/motion/cdq/store.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/motion/cdq/object.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/motion/cdq/partial_predicate.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/motion/cdq/query.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/motion/cdq/targeted_query.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/motion/cdq/relationship_query.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/motion/managed_object.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/motion/cdq/collection_proxy.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/motion/cdq/object_proxy.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/motion/cdq.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/motion-yaml-1.6.4/lib/project/scanner.rb.o
+  ./build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/dev/islandmagic/cdq-crash-repro/app/app_delegate.rb.o
+  ./build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/dev/islandmagic/cdq-crash-repro/app/models/article.rb.o
+  ./build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/dev/islandmagic/cdq-crash-repro/app/models/comment.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Library/RubyMotion/lib/motion/spec.rb.o
+  /Users/gauberger/Library/RubyMotion/build/build/iPhoneSimulator-16.1-Development/objs/Library/RubyMotion/lib/motion/project/template/ios/spec-helpers/ui.rb.o
+  ./build/iPhoneSimulator-16.1-Development/objs/Users/gauberger/dev/islandmagic/cdq-crash-repro/spec/cdq_spec.rb.o
+#+end_src
+*** Linking
+#+begin_src sh
+  /Applications/Xcode-14.1.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -o "./build/iPhoneSimulator-16.1-Development/cdq-crash-repro_spec.app/cdq-crash-repro"  -filelist "/var/folders/75/rt54s0jj4rq6v0zxz44vrn5r0000gn/T/linker-objs-list20221129-22589-7s31dv" -arch x86_64 -isysroot "/Applications/Xcode-14.1.0.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.1.sdk" -F/Applications/Xcode-14.1.0.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.1.sdk/System/Library/Frameworks -mios-simulator-version-min=16.1 -Wl,-no_pie -L"/Library/RubyMotion/data/ios/16.1/iPhoneSimulator" -lrubymotion-static -lobjc -licucore -stdlib=libc++  -framework UIKit -framework Foundation -framework CoreGraphics -framework CoreFoundation -framework CFNetwork -framework CoreAudio -framework QuartzCore -framework CoreServices -framework CoreData   -force_load "/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/motion-yaml-1.6.4/lib/YAMLKit/libYAMLKit_iOS.a" -force_load "/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/vendor/cdq/ext/build-iPhoneSimulator/libext.a"
+#+end_src
+* Compiling Asset Bundles
+** Command
+#+begin_src sh
+  "/Applications/Xcode-14.1.0.app/Contents/Developer/usr/bin/actool" --output-format human-readable-text --notices --warnings --platform iphoneos --minimum-deployment-target 16.1 --target-device iphone --target-device ipad  --app-icon 'AppIcon' --launch-image 'LaunchImage' --output-partial-info-plist '/Users/gauberger/dev/islandmagic/cdq-crash-repro/build/iPhoneSimulator-16.1-Development/AssetCatalog-Info.plist' --compress-pngs --compile "/Users/gauberger/dev/islandmagic/cdq-crash-repro/build/iPhoneSimulator-16.1-Development/cdq-crash-repro_spec.app" "/Users/gauberger/dev/islandmagic/cdq-crash-repro/resources/Assets.xcassets"
+#+end_src
+
+#+begin_src xml
+  /* com.apple.actool.document.warnings */
+  /Users/gauberger/dev/islandmagic/cdq-crash-repro/resources/Assets.xcassets:./LaunchImage.launchimage: warning: Launch images are deprecated in iOS 13.0. Use a launch storyboard or XIB instead.
+  /Users/gauberger/dev/islandmagic/cdq-crash-repro/resources/Assets.xcassets:./LaunchImage.launchimage/(null)[2d][Default-375w-667h@2x.png]: warning: The launch image set "LaunchImage" has 2 unassigned children.
+  /* com.apple.actool.document.notices */
+  /Users/gauberger/dev/islandmagic/cdq-crash-repro/resources/Assets.xcassets:./AppIcon.appiconset/[][ipad][76x76][][][1x][][][]: notice: 76x76@1x app icons only apply to iPad apps targeting releases of iOS prior to 10.0.
+  /* com.apple.actool.compilation-results */
+  /Users/gauberger/dev/islandmagic/cdq-crash-repro/build/iPhoneSimulator-16.1-Development/AssetCatalog-Info.plist
+  /Users/gauberger/dev/islandmagic/cdq-crash-repro/build/iPhoneSimulator-16.1-Development/cdq-crash-repro_spec.app/AppIcon60x60@2x.png
+  /Users/gauberger/dev/islandmagic/cdq-crash-repro/build/iPhoneSimulator-16.1-Development/cdq-crash-repro_spec.app/AppIcon76x76@2x~ipad.png
+  /Users/gauberger/dev/islandmagic/cdq-crash-repro/build/iPhoneSimulator-16.1-Development/cdq-crash-repro_spec.app/Assets.car
+  /Users/gauberger/dev/islandmagic/cdq-crash-repro/build/iPhoneSimulator-16.1-Development/cdq-crash-repro_spec.app/LaunchImage-1100-Portrait-2436h@3x.png
+  /Users/gauberger/dev/islandmagic/cdq-crash-repro/build/iPhoneSimulator-16.1-Development/cdq-crash-repro_spec.app/LaunchImage-700-568h@2x.png
+  /Users/gauberger/dev/islandmagic/cdq-crash-repro/build/iPhoneSimulator-16.1-Development/cdq-crash-repro_spec.app/LaunchImage-700-Portrait@2x~ipad.png
+  /Users/gauberger/dev/islandmagic/cdq-crash-repro/build/iPhoneSimulator-16.1-Development/cdq-crash-repro_spec.app/LaunchImage-700-Portrait~ipad.png
+  /Users/gauberger/dev/islandmagic/cdq-crash-repro/build/iPhoneSimulator-16.1-Development/cdq-crash-repro_spec.app/LaunchImage-700@2x.png
+  /Users/gauberger/dev/islandmagic/cdq-crash-repro/build/iPhoneSimulator-16.1-Development/cdq-crash-repro_spec.app/LaunchImage-800-667h@2x.png
+  /Users/gauberger/dev/islandmagic/cdq-crash-repro/build/iPhoneSimulator-16.1-Development/cdq-crash-repro_spec.app/LaunchImage-800-Portrait-736h@3x.png
+  
+#+end_src
+* Writing Info.plist =./build/iPhoneSimulator-16.1-Development/cdq-crash-repro_spec.app/Info.plist=
+#+begin_src xml
+  <?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+  <plist version="1.0">
+  <dict>
+  <key>BuildMachineOSBuild</key>
+  <string>22A400</string>
+  <key>CFBundleDevelopmentRegion</key>
+  <string>en</string>
+  <key>CFBundleName</key>
+  <string>cdq-crash-repro</string>
+  <key>CFBundleDisplayName</key>
+  <string>cdq-crash-repro</string>
+  <key>CFBundleIdentifier</key>
+  <string>com.yourcompany.cdq-crash-repro_spec</string>
+  <key>CFBundleExecutable</key>
+  <string>cdq-crash-repro</string>
+  <key>CFBundleInfoDictionaryVersion</key>
+  <string>6.0</string>
+  <key>CFBundlePackageType</key>
+  <string>APPL</string>
+  <key>CFBundleShortVersionString</key>
+  <string>1.0</string>
+  <key>CFBundleSignature</key>
+  <string>????</string>
+  <key>CFBundleVersion</key>
+  <string>1.0</string>
+  <key>CFBundleIcons</key>
+  <dict>
+  <key>CFBundlePrimaryIcon</key>
+  <dict>
+  <key>CFBundleIconName</key>
+  <string>AppIcon</string>
+  <key>CFBundleIconFiles</key>
+  <array>
+  <string>AppIcon60x60</string>
+  </array>
+  </dict>
+  </dict>
+  <key>CFBundleIcons~ipad</key>
+  <dict>
+  <key>CFBundlePrimaryIcon</key>
+  <dict>
+  <key>CFBundleIconName</key>
+  <string>AppIcon</string>
+  <key>CFBundleIconFiles</key>
+  <array>
+  <string>AppIcon60x60</string>
+  <string>AppIcon76x76</string>
+  </array>
+  </dict>
+  </dict>
+  <key>UIRequiresFullScreen</key>
+  <true/>
+  <key>ITSAppUsesNonExemptEncryption</key>
+  <false/>
+  <key>UILaunchImages</key>
+  <array>
+  <dict>
+  <key>UILaunchImageOrientation</key>
+  <string>Portrait</string>
+  <key>UILaunchImageName</key>
+  <string>LaunchImage-1100-Portrait-2436h</string>
+  <key>UILaunchImageSize</key>
+  <string>{375, 812}</string>
+  <key>UILaunchImageMinimumOSVersion</key>
+  <string>11.0</string>
+  </dict>
+  <dict>
+  <key>UILaunchImageOrientation</key>
+  <string>Portrait</string>
+  <key>UILaunchImageName</key>
+  <string>LaunchImage-800-Portrait-736h</string>
+  <key>UILaunchImageSize</key>
+  <string>{414, 736}</string>
+  <key>UILaunchImageMinimumOSVersion</key>
+  <string>8.0</string>
+  </dict>
+  <dict>
+  <key>UILaunchImageOrientation</key>
+  <string>Portrait</string>
+  <key>UILaunchImageName</key>
+  <string>LaunchImage-800-667h</string>
+  <key>UILaunchImageSize</key>
+  <string>{375, 667}</string>
+  <key>UILaunchImageMinimumOSVersion</key>
+  <string>8.0</string>
+  </dict>
+  <dict>
+  <key>UILaunchImageOrientation</key>
+  <string>Portrait</string>
+  <key>UILaunchImageName</key>
+  <string>LaunchImage-700</string>
+  <key>UILaunchImageSize</key>
+  <string>{320, 480}</string>
+  <key>UILaunchImageMinimumOSVersion</key>
+  <string>7.0</string>
+  </dict>
+  <dict>
+  <key>UILaunchImageOrientation</key>
+  <string>Portrait</string>
+  <key>UILaunchImageName</key>
+  <string>LaunchImage-700-568h</string>
+  <key>UILaunchImageSize</key>
+  <string>{320, 568}</string>
+  <key>UILaunchImageMinimumOSVersion</key>
+  <string>7.0</string>
+  </dict>
+  <dict>
+  <key>UILaunchImageOrientation</key>
+  <string>Portrait</string>
+  <key>UILaunchImageName</key>
+  <string>LaunchImage-700-Portrait</string>
+  <key>UILaunchImageSize</key>
+  <string>{768, 1024}</string>
+  <key>UILaunchImageMinimumOSVersion</key>
+  <string>7.0</string>
+  </dict>
+  </array>
+  <key>MinimumOSVersion</key>
+  <string>16.1</string>
+  <key>CFBundleSupportedPlatforms</key>
+  <array>
+  <string>iPhoneOS</string>
+  </array>
+  <key>CFBundleIconFiles</key>
+  <array>
+  <string>AppIcon60x60</string>
+  </array>
+  <key>UIAppFonts</key>
+  <array>
+  </array>
+  <key>UIDeviceFamily</key>
+  <array>
+  <integer>1</integer>
+  <integer>2</integer>
+  </array>
+  <key>UISupportedInterfaceOrientations</key>
+  <array>
+  <string>UIInterfaceOrientationPortrait</string>
+  </array>
+  <key>UIStatusBarStyle</key>
+  <string>UIStatusBarStyleDefault</string>
+  <key>UIBackgroundModes</key>
+  <array>
+  </array>
+  <key>DTXcode</key>
+  <string>0141</string>
+  <key>DTXcodeBuild</key>
+  <string>14B47b</string>
+  <key>DTSDKName</key>
+  <string>iphonesimulator16.1</string>
+  <key>DTSDKBuild</key>
+  <string>20B71</string>
+  <key>DTPlatformName</key>
+  <string>iphonesimulator</string>
+  <key>DTCompiler</key>
+  <string>com.apple.compilers.llvm.clang.1_0</string>
+  <key>DTPlatformVersion</key>
+  <string>16.1</string>
+  <key>DTPlatformBuild</key>
+  <string>20B71</string>
+  </dict>
+  </plist>
+#+end_src

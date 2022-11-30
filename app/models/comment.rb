@@ -1,0 +1,2 @@
+class Comment < CDQManagedObject
+end

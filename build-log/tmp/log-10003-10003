@@ -1,0 +1,13 @@
+** BridgeSupport Files
+- /Users/gauberger/dev/islandmagic/cdq-crash-repro/Library/RubyMotion/data/ios/16.1/BridgeSupport/RubyMotion.bridgesupport
+- /Users/gauberger/dev/islandmagic/cdq-crash-repro/Library/RubyMotion/data/ios/16.1/BridgeSupport/UIKit.bridgesupport
+- /Users/gauberger/dev/islandmagic/cdq-crash-repro/Library/RubyMotion/data/ios/16.1/BridgeSupport/Foundation.bridgesupport
+- /Users/gauberger/dev/islandmagic/cdq-crash-repro/Library/RubyMotion/data/ios/16.1/BridgeSupport/CoreGraphics.bridgesupport
+- /Users/gauberger/dev/islandmagic/cdq-crash-repro/Library/RubyMotion/data/ios/16.1/BridgeSupport/CoreFoundation.bridgesupport
+- /Users/gauberger/dev/islandmagic/cdq-crash-repro/Library/RubyMotion/data/ios/16.1/BridgeSupport/CFNetwork.bridgesupport
+- /Users/gauberger/dev/islandmagic/cdq-crash-repro/Library/RubyMotion/data/ios/16.1/BridgeSupport/CoreAudio.bridgesupport
+- /Users/gauberger/dev/islandmagic/cdq-crash-repro/Library/RubyMotion/data/ios/16.1/BridgeSupport/QuartzCore.bridgesupport
+- /Users/gauberger/dev/islandmagic/cdq-crash-repro/Library/RubyMotion/data/ios/16.1/BridgeSupport/CoreServices.bridgesupport
+- /Users/gauberger/dev/islandmagic/cdq-crash-repro/Library/RubyMotion/data/ios/16.1/BridgeSupport/CoreData.bridgesupport
+- /Users/gauberger/dev/islandmagic/cdq-crash-repro/Users/gauberger/Library/RubyMotion/build/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/motion-yaml-1.6.4/lib/YAMLKit/YAMLKit.bridgesupport
+- /Users/gauberger/dev/islandmagic/cdq-crash-repro/Users/gauberger/Library/RubyMotion/build/Users/gauberger/.rvm/gems/ruby-2.4.1/gems/cdq-2.0.0/vendor/cdq/ext/ext.bridgesupport

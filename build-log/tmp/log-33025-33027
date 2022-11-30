@@ -1,0 +1,82 @@
+** Generating =main.mm=
+#+begin_src objective-c
+  #import <Foundation/Foundation.h>
+  
+  extern "C" {
+  void ruby_init(void);
+  void ruby_init_loadpath(void);
+  void ruby_script(const char *);
+  void *rb_vm_top_self(void);
+  void rb_define_global_const(const char *, void *);
+  void rb_rb2oc_exc_handler(void);
+  void ruby_init_device_repl(void);
+  void MREP_6769264D7FE5460C91E8E9B124D672E2(void *, void *);
+  void MREP_91A2C11531F74100B701FBE443866DC3(void *, void *);
+  void MREP_DFD544786BA94FCDA30236645CA64A9E(void *, void *);
+  void MREP_4C8BBCB5374D4124AAFD67D0577892F5(void *, void *);
+  void MREP_7B144AA763B441F89FA9EFF946994C5C(void *, void *);
+  void MREP_CBD1561F30ED4A688F4D6C3AB6FB71EB(void *, void *);
+  void MREP_0E98A900023F403F851E305CFF6797AE(void *, void *);
+  void MREP_ED41669A2E8B4F5281E65F905823D793(void *, void *);
+  void MREP_9E940DABF0CD47F69A68526BE745A86F(void *, void *);
+  void MREP_BC41BAF35C80401E9FC96F70D8D893B5(void *, void *);
+  void MREP_BE467412CFDA4065AC89E6E78AC28D27(void *, void *);
+  void MREP_715BF61BCDB24DB5921E0506CB5D76CE(void *, void *);
+  void MREP_7480066F3FF24D8BA0EAA6559245DDEE(void *, void *);
+  void MREP_4C9AA883388A49A18FEF96334821EE01(void *, void *);
+  void MREP_7402A5D15AE44D599EC20B2D41DE1550(void *, void *);
+  void MREP_AFF1311137684D8D92BAAB652D0F3CC8(void *, void *);
+  void MREP_1A66D23214E94A34A16EE7D6C86A2621(void *, void *);
+  void MREP_A50B453CE257480D92BE6B5E582F7A8C(void *, void *);
+  void MREP_68AD115A9D0B4B36ABA14BEE476F46E1(void *, void *);
+  int rm_repl_port = 53243;
+  }
+  
+  extern "C"
+  void
+  RubyMotionInit(int argc, char **argv)
+  {
+  static bool initialized = false;
+  if (!initialized) {
+  ruby_init();
+  ruby_init_loadpath();
+  if (argc > 0) {
+  const char *progname = argv[0];
+  ruby_script(progname);
+  }
+  #if !__LP64__
+  try {
+  #endif
+  void *self = rb_vm_top_self();
+  ruby_init_device_repl();
+  rb_define_global_const("RUBYMOTION_ENV", @"test");
+  rb_define_global_const("RUBYMOTION_VERSION", @"8.8");
+  MREP_6769264D7FE5460C91E8E9B124D672E2(self, 0);
+  MREP_91A2C11531F74100B701FBE443866DC3(self, 0);
+  MREP_DFD544786BA94FCDA30236645CA64A9E(self, 0);
+  MREP_4C8BBCB5374D4124AAFD67D0577892F5(self, 0);
+  MREP_7B144AA763B441F89FA9EFF946994C5C(self, 0);
+  MREP_CBD1561F30ED4A688F4D6C3AB6FB71EB(self, 0);
+  MREP_0E98A900023F403F851E305CFF6797AE(self, 0);
+  MREP_ED41669A2E8B4F5281E65F905823D793(self, 0);
+  MREP_9E940DABF0CD47F69A68526BE745A86F(self, 0);
+  MREP_BC41BAF35C80401E9FC96F70D8D893B5(self, 0);
+  MREP_BE467412CFDA4065AC89E6E78AC28D27(self, 0);
+  MREP_715BF61BCDB24DB5921E0506CB5D76CE(self, 0);
+  MREP_7480066F3FF24D8BA0EAA6559245DDEE(self, 0);
+  MREP_4C9AA883388A49A18FEF96334821EE01(self, 0);
+  MREP_7402A5D15AE44D599EC20B2D41DE1550(self, 0);
+  MREP_AFF1311137684D8D92BAAB652D0F3CC8(self, 0);
+  MREP_1A66D23214E94A34A16EE7D6C86A2621(self, 0);
+  MREP_A50B453CE257480D92BE6B5E582F7A8C(self, 0);
+  MREP_68AD115A9D0B4B36ABA14BEE476F46E1(self, 0);
+  #if !__LP64__
+  }
+  catch (...) {
+  rb_rb2oc_exc_handler();
+  }
+  #endif
+  initialized = true;
+  }
+  }
+#+end_src
